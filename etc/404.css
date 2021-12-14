@@ -108,6 +108,8 @@ body {
 
 .button-container {
     display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 .button-container > .button {
     margin-right: 20px;
@@ -130,14 +132,7 @@ body {
     border-color: #00b4fd;
 }
 
-.no-js #back-button,
-#redirect-notice {
-    display: none;
-}
-.redirecting #redirect-notice {
-    display: block !important;
-}
-.redirecting #http404-notice {
+.no-js #back-button {
     display: none;
 }
 
