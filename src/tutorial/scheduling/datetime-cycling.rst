@@ -243,10 +243,7 @@ The Initial and Final Cycle Points
    There are two special recurrences for the initial and final cycle points:
 
 * ``R1``: run once at the initial cycle point.
-* ``R1/P0Y``: run once at the final cycle point.
-
-.. TODO - change terminology as done in the cylc user guide, "repeat" can be
-   confusing. Use occur?
+* ``R1/$``: run once at the :term:`final cycle point`.
 
 Intercycle Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^

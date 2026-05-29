@@ -497,7 +497,7 @@ points:
    R1/^+PT12H  # Repeat once 12 hours after the initial cycle point
                # R[limit]/[datetime]
                # Equivalent to R1/+PT12H
-   R1/$        # Repeat once at the final cycle point
+   R1/$        # Run once at the final cycle point
                # R[limit]/[datetime]
                # Equivalent to R1//+P0D
    $-P2D/PT3H  # Repeat 3 hourly starting two days before the

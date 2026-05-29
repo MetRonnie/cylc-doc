@@ -28,7 +28,7 @@ To make a workflow repeat we must tell Cylc three things:
 
    * :term:`recurrence`
    * :term:`initial cycle point`
-   * :term:`final cycle point` (Optional)
+   * :term:`stop cycle point` (Optional)
 
 .. ifnotslides::
 
@@ -36,7 +36,7 @@ To make a workflow repeat we must tell Cylc three things:
       How often to repeat the workflow (or part of it).
    The :term:`initial cycle point`.
       The cycle point to start from.
-   The :term:`final cycle point` (optional).
+   The :term:`stop cycle point` (optional).
       We can also tell Cylc where to stop the workflow.
 
 .. nextslide::

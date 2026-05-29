@@ -87,6 +87,14 @@ would only run at cycle ``3``.
 .. image:: ../../img/initial-start-stop-final-cp.svg
    :align: center
 
+.. warning::
+
+   If the workflow reached the final cycle point and shut down, it
+   cannot easily be restarted, even with a new final cycle point set.
+
+   For this reason, it is recommended to prefer defining the stop cycle point
+   instead as this will make it easier to later extend a workflow run if needed.
+
 
 Restarts and the Initial, Final, Start and Stop Cycle Points
 ------------------------------------------------------------
@@ -107,12 +115,6 @@ values by passing ``reload`` to the options
 (e.g. ``--final-cycle-point=reload``); this will remove the stored value from
 the database so future restarts will go back to picking up any changes
 to the config.
-
-.. note::
-
-   If the workflow reached the final cycle point and shut down, it is finished
-   and cannot be restarted; the ``--final-cycle-point`` option will have
-   no effect.
 
 The ``--initial-cycle-point`` and ``--start-cycle-point`` options cannot be used
 in a restart; workflows always start from the cycle point where they

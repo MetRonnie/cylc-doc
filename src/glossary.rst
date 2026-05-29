@@ -411,7 +411,7 @@ Glossary
 
       .. seealso::
 
-         * :cylc:conf:`[scheduling]final cycle point`.
+         * :cylc:conf:`[scheduling]final cycle point`
          * :term:`stop cycle point`
 
 
@@ -429,6 +429,7 @@ Glossary
 
 
    stop cycle point
+   stop after cycle point
       The stop cycle point is the :term:`cycle point` where :term:`scheduler`
       stops running the workflow and :term:`shuts down <shutdown>`.
 
@@ -436,6 +437,7 @@ Glossary
 
       .. seealso::
 
+         * :cylc:conf:`[scheduling]stop after cycle point`
          * :term:`start cycle point`
          * :ref:`Cylc User Guide <start_stop_cycle_point>`
 

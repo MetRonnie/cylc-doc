@@ -516,7 +516,7 @@ Files Generated at Runtime
       *waiting*, *running* and *succeeded* states. The *preparing* and
       *submitted* states may be too quick to notice.
 
-      When the workflow reaches the final cycle point and all tasks have succeeded
+      When the workflow reaches the stop cycle point and all tasks have succeeded
       the scheduler will shutdown automatically.
 
       .. tip::

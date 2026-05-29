@@ -264,7 +264,7 @@ Start, Stop, Restart
       You will now have a copy of the weather-forecasting workflow along with some
       executables and python modules.
 
-   #. **Set The Initial And Final Cycle Points.**
+   #. **Set The Initial And Stop Cycle Points.**
 
       We want the workflow to run for 6 hours, starting at least 7 hours ago, on
       the hour.
@@ -285,14 +285,11 @@ Start, Stop, Restart
 
       * ``-PT7H`` subtracts 7 hours from this value.
 
-      Set the :term:`final cycle point`:
+      Set the :term:`stop cycle point` to be six hours after the initial cycle point:
 
       .. code-block:: cylc
 
-         final cycle point = +PT6H
-
-      This sets the :term:`final cycle point` six hours after the
-      :term:`initial cycle point`.
+         stop after cycle point = +PT6H
 
       Run ``cylc validate`` to check for any errors::
 
@@ -386,7 +383,7 @@ Start, Stop, Restart
       will still run though they will not do anything as they do not call any
       scripts.
 
-      Once the workflow has reached the final cycle point and all tasks have
+      Once the workflow has reached the stop cycle point and all tasks have
       succeeded the scheduler will shut down automatically.
 
       .. TODO: Advise on what to do if all does not go well.
@@ -482,8 +479,8 @@ Start, Stop, Restart
 
       .. spoiler:: Hint hint
 
-         * ``cycle-point`` - this will be the last cycle of the workflow,
-           i.e. the final cycle point.
+         * ``cycle-point`` - this will be the last cycle that the workflow reached,
+           i.e. the stop cycle point.
          * ``task-name`` - set this to "post_process_exeter".
 
    #. **View The Rainfall Data.**
@@ -508,7 +505,7 @@ Start, Stop, Restart
 
       .. spoiler:: Hint hint
 
-         * ``cycle-point`` - this will be the last cycle of the workflow,
-           i.e. the final cycle point.
+         * ``cycle-point`` - this will be the last cycle that the workflow reached,
+           i.e. the stop cycle point.
          * ``task-name`` - set this to "forecast".
          * ``submission-number`` - set this to "01".

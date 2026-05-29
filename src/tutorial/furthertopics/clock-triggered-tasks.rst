@@ -51,7 +51,7 @@ Paste the following code into a ``flow.cylc`` file:
 
    [scheduling]
        initial cycle point = TODO
-       final cycle point = +P1D # Run for one day
+       stop after cycle point = +P1D # Run for one day
        [[graph]]
            PT1H = bell
 
@@ -131,7 +131,7 @@ Edit the ``[[scheduling]]`` section to read:
 .. code-block:: cylc
 
    initial cycle point = now
-   final cycle point = +P1D # Run for one day
+   stop after cycle point = +P1D # Run for one day
    [[xtriggers]]
        quarter_past_trigger = wall_clock(offset=PT15M)
        half_past_trigger = wall_clock(offset=PT30M)

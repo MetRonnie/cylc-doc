@@ -160,7 +160,7 @@ triggers another task bar and when fully completed triggers another task, baz.
 
          [scheduling]
              initial cycle point = 2019-06-27T00Z
-             final cycle point = 2019-10-27T00Z
+             stop after cycle point = 2019-10-27T00Z
              [[graph]]
                  P2M = """
                      long_forecasting_task =>  another_weather_task
@@ -291,7 +291,7 @@ triggers another task bar and when fully completed triggers another task, baz.
 
             [scheduling]
                 initial cycle point = 2019-06-27T00Z
-                final cycle point = 2019-10-27T00Z
+                stop after cycle point = 2019-10-27T00Z
 
                 [[graph]]
                     P2M = """
@@ -384,7 +384,7 @@ triggers another task bar and when fully completed triggers another task, baz.
                 title = "test workflow to demo message triggers"
             [scheduling]
                 initial cycle point = 2019-06-27T00Z
-                final cycle point = 2019-10-27T00Z
+                stop after cycle point = 2019-10-27T00Z
                 [[graph]]
                     P2M = """
                         long_forecasting_task:update1 =>  another_weather_task
